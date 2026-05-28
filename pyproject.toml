@@ -1,0 +1,19 @@
+[project]
+name = "employee-management-system"
+version = "0.1.0"
+description = "A simple Employee Management System with Flask and SQLAlchemy using layered architecture"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flask>=3.0.0",
+    "sqlalchemy>=2.0.0",
+    "pg8000>=1.30.0",
+    "pydantic[email]>=2.6.0",
+    "python-dotenv>=1.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+]
